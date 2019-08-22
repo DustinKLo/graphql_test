@@ -1,0 +1,27 @@
+# get single record
+{
+  launch(flight_number: 100) {
+    flight_number
+    mission_name
+    launch_year
+    lauch_date_local
+    launch_success
+    rocket {
+      rocket_name
+    }
+  }
+}
+
+# get multiple records
+{
+  launches {
+    launch_year,
+    launch_date_local,
+    launch_success
+    rocket {
+      rocket_id
+      rocket_name
+      rocket_type
+    }
+  }
+}
